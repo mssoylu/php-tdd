@@ -19,9 +19,6 @@ But we have an alternative for autoload in PHPUnit. It's a XML options file : ph
 
 Here is document about [phpunit.xml](https://phpunit.de/manual/3.7/en/appendixes.configuration.html)
 
-
-With this file you 
-
 ## Test Now !
 
 Now we do not need more "tests" keyword in our test directive.
