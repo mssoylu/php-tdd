@@ -32,21 +32,28 @@ Create composer JSON file
 ```bash
 composer init
 ```
+We put our classes in classes directory in meeting directory.
+And use "namespace Classes\Meeting;" row all this classes.
 
-Add our class directory composer autoload source in composer.json ( it has to be root node )
+Add our class directory composer autoload source in composer.json file.
 
 ```json
- 	"autoload": {
- 	   "psr-0": {
-        	"" : "classes"
-    	}
+{
+    "autoload": {
+ 	   "classmap": [
+        	"classes"
+    	]
 	}
+}
 ```
 Process composer.json with terminal command.
 
 ```bash
 php composer.phar dump-autoload
 ```
+
+Now our autoload system is ready. You can vendor/composer/autoload_classmap.php file.
+You will see our namespace classes in file.
 
 For more info [click for composer site](http://getcomposer.org)
 

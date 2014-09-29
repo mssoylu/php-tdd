@@ -1,7 +1,9 @@
 <?php 
 
+// We have still autoload function here
 require 'vendor/autoload.php';
 
+// We call namespace class here, think like some kind of include
 use Classes\Meeting\hello;
 
 /**

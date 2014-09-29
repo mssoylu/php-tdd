@@ -1,5 +1,6 @@
 <?php 
 
+// first namespace definition 
 namespace Classes\Meeting;
 
 /**
