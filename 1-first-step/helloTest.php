@@ -4,6 +4,12 @@
  * Hello Test
  */
 
-Class helloTest {
-	
+Class helloTest 
+{
+		
+    protected function setUp() {
+    }
+
+    protected function tearDown() {
+    }
 }
