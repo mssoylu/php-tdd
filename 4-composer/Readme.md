@@ -7,7 +7,7 @@ You can use or create symfony, silex or similar framework package or with compos
 ## Well standart autoload support 
 Composer can define multiple autoload source. We will use this autoload system in our TDD setup. 
 
-## Use namespaces for classes
+## Use namespaces 
 
 PHP has some coding standarts. For example PSR-0. It is about autoloading classes.
 
@@ -33,16 +33,22 @@ Create composer JSON file
 composer init
 ```
 
-Add our class directory composer autoload source in composer.json
+Add our class directory composer autoload source in composer.json ( it has to be root node )
 
 ```json
+ 	"autoload": {
+ 	   "psr-0": {
+        	"" : "classes"
+    	}
+	}
+```
+Process composer.json with terminal command.
 
+```bash
+php composer.phar dump-autoload
 ```
 
-
-
 For more info [click for composer site](http://getcomposer.org)
-
 
 ## Test Now !
 
