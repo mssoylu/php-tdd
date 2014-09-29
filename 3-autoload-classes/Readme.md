@@ -1,8 +1,8 @@
-First Step 
+Autoload Classes 
 =====================
 
-## Deadly Simple Test
-Test for multiple file use directory. Put your all test files in test/ directory and call with phpunit command.
+## Autoload working well
+You do not have to include every class. Just create autoload function and register with SPL.
 
 ```bash
 phpunit tests/
