@@ -3,8 +3,7 @@
 /**
  * Hello 
  */
-
-Class hello {
+class hello {
 	
 	// first function say hello
 	public function hello(){

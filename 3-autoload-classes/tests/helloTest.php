@@ -8,7 +8,7 @@ require_once "autoload.php";
  * Test class name with finish "Test" keyword.
  * We extend this class with PHPUnit Framwork TestCase.
  */
-Class helloTest extends PHPUnit_Framework_TestCase 
+class helloTest extends PHPUnit_Framework_TestCase 
 {
 	// this method is construct of class	
     protected function setUp() 
