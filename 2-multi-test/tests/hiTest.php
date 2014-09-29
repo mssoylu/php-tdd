@@ -1,36 +1,36 @@
-<?php 
+<?php
 
-require_once "hello.php";
+require_once "hi.php";
 
 /**
- * Hello Test
+ * Hi Test
  * 
  * Test class name with finish "Test" keyword.
  * We extend this class with PHPUnit Framwork TestCase.
  */
-Class helloTest extends PHPUnit_Framework_TestCase 
+Class hiTest extends PHPUnit_Framework_TestCase 
 {
 	// this method is construct of class	
     protected function setUp() 
     { 
-    	echo "\n Tests start now.";
+    	echo "\n Hi tests start now.";
     }
 
     // method name start with "test" keyword 
-    function testHello()
+    function testHi()
     {
-    	$hello = new hello();
+    	$hi = new hi();
 
     	// local test operation name 
-    	$this->setName('Say Hello Test');
+    	$this->setName('Say Hi Test');
     	
     	// Here is test condition
-    	$this->assertEquals("hello", $hello->hello(), ' You did not say hello.');    	
+    	$this->assertEquals("hi", $hi->hi(), ' You did not say hi.');    	
     } 
     
     // this method is deconstruct of class
     protected function tearDown() 
     {
-    	echo "\n\n Tests finish now.";
+    	echo "\n\n Hi tests finish now.";
     }
 }

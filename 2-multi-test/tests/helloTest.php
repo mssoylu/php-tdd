@@ -13,7 +13,7 @@ Class helloTest extends PHPUnit_Framework_TestCase
 	// this method is construct of class	
     protected function setUp() 
     { 
-    	echo "\n Tests start now.";
+    	echo "\n Hello tests start now.";
     }
 
     // method name start with "test" keyword 
@@ -31,6 +31,6 @@ Class helloTest extends PHPUnit_Framework_TestCase
     // this method is deconstruct of class
     protected function tearDown() 
     {
-    	echo "\n\n Tests finish now.";
+    	echo "\n\n Hello tests finish now.";
     }
 }
