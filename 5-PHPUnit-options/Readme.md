@@ -24,9 +24,8 @@ With this file you
 
 ## Test Now !
 
-Now we do not need more include our target classes start of test classes. 
-Because composer will use dump autoload for PHPUnit test command.
+Now we do not need more "tests" keyword in our test directive.
 
 ```bash
-phpunit tests/
+phpunit
 ```
