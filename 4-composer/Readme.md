@@ -52,6 +52,9 @@ For more info [click for composer site](http://getcomposer.org)
 
 ## Test Now !
 
+Now we do not need more include our target classes start of test classes. 
+Because composer will use dump autoload for PHPUnit test command.
+
 ```bash
 phpunit tests/
 ```

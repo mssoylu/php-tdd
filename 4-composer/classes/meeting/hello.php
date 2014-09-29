@@ -1,5 +1,7 @@
 <?php 
 
+namespace Classes\Meeting;
+
 /**
  * Hello 
  */

@@ -1,20 +1,8 @@
 {
-    "name": "root/4-composer",
-    "description": "PHP TDD tutorials",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mehmet Soylu",
-            "email": "mssoylu@gmail.com"
-        }
-    ],
-    "require": {
-
-    },
     "autoload": {
- 	   "psr-0": {
-        	"" : "classes"
-    	}
+ 	   "classmap": [
+        	"classes/meeting"
+    	]
 	}
     
 }

@@ -1,5 +1,9 @@
 <?php
 
+require 'vendor/autoload.php';
+
+use Classes\Meeting\hi;
+
 /**
  * Hi Test
  * 
