@@ -6,7 +6,17 @@ use Classes\Meeting\hello;
  * Hello Test
  */
 class helloTest extends PHPUnit_Framework_TestCase 
-{		
+{
+	/**
+	 * Methods list
+	 * 
+	 * @var array
+	 */
+	protected $classAttributes = array(
+			'location', 
+			'people'
+	);
+	
     /**
      * Test start
      */
@@ -19,13 +29,13 @@ class helloTest extends PHPUnit_Framework_TestCase
     /**
      * Test hello class instance name
      */
-    public function testCheckMethodReturnsForHelloClass()
+    public function testCheckAttributesForHelloClass()
     {
     	$hello = new hello();
     	
-    	// check object returns
-    	$this->assertEquals('hello', $hello->hello(), 'take_care() method does not return "hello"');
-    	$this->assertEquals('take care', $hello->take_care(), 'take_care() method does not return "take care"');
+    	// check object attributes 
+    	foreach ($this->classAttributes as $attributeName)
+    		$this->assertClassHasAttribute($attributeName, get_class($hello)); 
     } 
     
     /**
@@ -33,6 +43,5 @@ class helloTest extends PHPUnit_Framework_TestCase
      */
     protected function tearDown() 
     {
-    	
     }
 }

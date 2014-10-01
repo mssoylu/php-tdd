@@ -5,14 +5,14 @@ use Classes\Meeting\Hi;
 /**
  * Hi Test
  */
-class HiTest extends PHPUnit_Framework_TestCase 
+class hiTest extends PHPUnit_Framework_TestCase 
 {		
 	/**
 	 * Methods list
 	 * 
 	 * @var array
 	 */
-	protected $methodsOfHi = array(
+	protected $classMethods = array(
 			'hi', 
 			'bye'
 	);
@@ -34,7 +34,7 @@ class HiTest extends PHPUnit_Framework_TestCase
     	$hi = new Hi();
 
     	// check object methods created or not
-    	foreach ($this->methodsOfHi as $methodName)
+    	foreach ($this->classMethods as $methodName)
     		$this->assertContains($methodName, get_class_methods($hi), $methodName . ' method not found.'); 
     } 
     
