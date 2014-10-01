@@ -1,12 +1,12 @@
-<?php 
+<?php
 
-/**
- * Hello 
- */
-class hello 
+Class Hello
 {
-	// first function say hello
-	public function hello(){
-		return "hello";
-	} 
+    /**
+     * first function say hello
+     */
+    public function hello()
+    {
+        return "hello";
+    }
 }
